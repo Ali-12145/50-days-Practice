@@ -17,4 +17,14 @@ body{
     width: 90vw;
     height: 90vh;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+
+}
+.image{
+    width: 100px;
+}
+
+.active{
+    flex: 2;
 }
