@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+.container{
+    background-color: rgb(114, 93, 234);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
