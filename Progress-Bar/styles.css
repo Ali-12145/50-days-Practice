@@ -21,7 +21,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     max-width: 100%;
-    width: 350px;
+    width: 400px;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -41,7 +41,7 @@ body {
 .progress{
     background-color: blueviolet;
     height: 0.25em;
-    left: 585px;
+    left: 595px;
     position: absolute;
     z-index: -1;
     transform: 0.4s ease;
@@ -64,4 +64,9 @@ button:hover{
 .nig{
     display: flex;
     justify-content: space-between;
+}
+
+.active{
+  background-color: rgb(113, 31, 190);
+  color: white;
 }
