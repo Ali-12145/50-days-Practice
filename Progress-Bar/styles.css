@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 600px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ 
+}
+.circle{
+    background-color: rgb(230, 214, 214);
+    height: 30px;
+    width: 30px;
+    color: #999;
+    border: 2px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress{
+    background-color: blueviolet;
+    height: 0.25em;
+    left: 585px;
+    position: absolute;
+    z-index: -1;
+    transform: 0.4s ease;
+}
