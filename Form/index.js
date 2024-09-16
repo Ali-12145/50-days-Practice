@@ -51,3 +51,7 @@ form_control2.appendChild(passLabel); // Changed to passLabel
 formEl.appendChild(form_control1);
 formEl.appendChild(form_control2);
 container.appendChild(formEl);
+
+const button = document.createElement("button");
+button.innerText = "Submit";
+container.appendChild(button);
