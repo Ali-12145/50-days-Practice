@@ -7,7 +7,8 @@ heading.textContent = "Don't Laugh Challenge";
 
 
 const jokeText = document.createElement("div");
-jokeText.className = "joke"
+jokeText.className = "joke";
+jokeText.textContent = "Click the button to get a new Joke";
 
 const btn = document.createElement("button");
 btn.textContent = "Another Joke";
@@ -17,9 +18,12 @@ btn.textContent = "Another Joke";
 
 
 
-// btn.addEventListener("click", () => {
-//     const 
-// })
+btn.addEventListener("click", async function ()  {
+    const req = await fetch("https://official-joke-api.appspot.com/jokes/random")
+    const res = await req.json();
+    console.log(res);
+    jokeText.innerText = `${res.setup} \n ${res.punchline}`
+})
 
 
 
