@@ -20,8 +20,8 @@ document.addEventListener("keypress", (e) => {
     body.textContent =""
     body.style.fontSize = "1.25em";
     body.appendChild(container);
-    left.innerText = e.code;
-    center.innerText = e.key;
-    right.innerText = e.charCode;
+    left.textContent = `${e.key === ' '? 'Space':e.key}`; 
+    center.textContent = e.keyCode;
+    right.textContent = e.code;
     
 })
