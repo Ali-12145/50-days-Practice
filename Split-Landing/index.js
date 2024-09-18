@@ -24,12 +24,8 @@ left_side.addEventListener("mouseleave", () => {
 right_side.addEventListener("mouseenter", () => {
     right_side.style.width = "75%";
     left_side.style.width = "25%";
-
-
 })
 right_side.addEventListener("mouseleave", () => {
     right_side.style.width = "50%";
     left_side.style.width = "50%";
-
-
 })
