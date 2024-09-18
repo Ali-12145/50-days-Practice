@@ -10,5 +10,18 @@ right.className = "right";
 container.appendChild(left);
 container.appendChild(center);
 container.appendChild(right);
-body.appendChild(container);
+body.textContent = "Press any key to Generate Keycodes"
+body.style.fontSize = "2em";
 
+
+
+document.addEventListener("keypress", (e) => {
+    
+    body.textContent =""
+    body.style.fontSize = "1.25em";
+    body.appendChild(container);
+    left.innerText = e.code;
+    center.innerText = e.key;
+    right.innerText = e.charCode;
+    
+})
